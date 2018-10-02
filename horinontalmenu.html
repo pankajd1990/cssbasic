@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color:royalblue;
+        color: red;
+    }
+    li{
+        float: left;
+    }
+
+    li a,.dropbtn{
+   display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 2px 10px;
+  text-decoration: none;
+
+    }
+    li a:hover,.dropdown:hover .dropbtn{
+        background-color: red;
+    } 
+    li.dropdown{
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position:absolute;
+        min-width: 160px;
+        background-color: brown;
+    }
+    .dropdown-content a{
+      padding: 2px 10px;
+      display: block;
+      text-align: left;
+    } 
+    .dropdown-content a:hover{
+
+background-color: aqua;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .dropdown-content1{
+       margin-left: 20px;
+    }
+    .dropdown:hover .dropdown-content .dropdown-content1{
+        display: block;
+    }
+</style>
+</head>
+<body>
+<ul>
+        <li class="dropdown"><a href="#" class="dropbtn">BASIC CSS</a>
+            <div class="dropdown-content">
+                   <a href="#">POSITION</a>
+                   <div class="dropdown-content1">
+                        <a href="#">Absolute</a>
+                        <a href="#">Relative</a>
+                        <a href="#">Stickey</a>
+                        <a href="#">Fix</a>
+                        <a href="#">Static</a>
+                    </div>        
+                   <a href="#">MARGIN-PADDING</a>
+                   <a href="#">Border</a>
+                   <div class="dropdown-content1">     
+                    <a href="#">Simple border</a>              
+                    <a href="#">Border Box</a>
+                    <a href="#">Content Box</a>
+                </div>     
+                <a href="#">Display</a>
+                   <div class="dropdown-content1">     
+                    <a href="#">Inline</a>              
+                    <a href="#">Inline-block</a>
+                    <a href="#">Block</a>
+                    <a href="#">None</a>
+                </div>    
+                <a href="#">Pseudo Class</a>  
+                <a href="#">Pseudo Element</a>    
+            </div>
+          </li>
+    <li><a href="#">Advance CSS</a></li>
+    <li class="dropdown"><a href="#" class="dropbtn">Client List</a>
+      <div class="dropdown-content">
+             <a href="#">Godrej</a>
+             <a href="#">Wipro</a>
+             <a href="#">ICICI bank</a>
+      </div>
+    </li>
+    <li class="dropdown"><a href="#" class="dropbtn">Client List</a>
+        <div class="dropdown-content">
+               <a href="#">Godrej</a>
+               <a href="#">Wipro</a>
+               <a href="#">ICICI bank</a>
+        </div>
+      </li>
+
+    <li><a href="#">Contact Us</a></li>
+</ul>
+ 
+</body>
+</html>
